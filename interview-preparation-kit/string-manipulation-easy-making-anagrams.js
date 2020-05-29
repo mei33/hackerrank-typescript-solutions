@@ -11,7 +11,7 @@ function makeAnagram(a, b) {
     const bLettersCounter = countLetters(bLetters);
     const usedLetters = new Set([...a, ...b]);
     let diffCounter = 0;
-    usedLetters.forEach(key => {
+    usedLetters.forEach((key) => {
         const aAmount = aLettersCounter[key] || 0;
         const bAmount = bLettersCounter[key] || 0;
         if (aAmount !== bAmount) {
