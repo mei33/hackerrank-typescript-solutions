@@ -5,7 +5,7 @@ function sherlockAndAnagrams(s) {
     for (let i = 0; i < sLength; i++) {
         for (let j = i + 1; j <= sLength; j++) {
             const substring = s.substring(i, j);
-            const substringFlatten = substring.split('').sort().join('');
+            const substringFlatten = substring.split("").sort().join("");
             if (!lettersCounter[substringFlatten]) {
                 lettersCounter[substringFlatten] = 1;
             }
