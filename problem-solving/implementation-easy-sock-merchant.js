@@ -8,10 +8,10 @@ function sockMerchant(n, ar) {
             store[colorCode] = store[colorCode] + 1;
         }
     });
-    let matched = 0;
+    let fullPairs = 0;
     Object.keys(store).forEach((key) => {
-        const pairsAmount = Math.floor(store[key] / 2);
-        matched += pairsAmount;
+        const fullPairsOfSpecificColor = Math.floor(store[key] / 2);
+        fullPairs += fullPairsOfSpecificColor;
     });
-    return matched;
+    return fullPairs;
 }

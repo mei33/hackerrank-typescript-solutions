@@ -3,8 +3,8 @@ function countingValleys(n, s) {
     let level = 0;
     let valleysAmount = 0;
     let isInValley = false;
-    steps.forEach(step => {
-        if (step === 'D') {
+    steps.forEach((step) => {
+        if (step === "D") {
             level -= 1;
         }
         else {
