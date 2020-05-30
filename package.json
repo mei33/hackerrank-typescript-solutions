@@ -4,6 +4,14 @@
   "author": "Maksim Andreev <andreev.kras@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1",
     "typescript": "3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
